@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    min-width: 1000px;
+    margin: 0;
+    background-color: #D8E1EA;
+    font-family: 'Pretendard-Regular';
+}
+nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: white;
+}
+.logo a{
+    font-family: 'KCCChassam';
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+}
+.nav-items a {
+    margin: 0;
+    padding-right: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-right input[type="search"] {
+    margin-right: 50px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+}
+.nav-right img {
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+}
+
+
+/* 메인 */
+
+
+.header h2{
+    margin-top: 40px;
+    margin-left: 250px;
+}
+.line{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    display: flex;
+    margin: 0 auto;
+}
+.changebody{
+    margin-top : 30px;
+    text-align: center;
+}
+
+.userimg {
+    position: relative;
+    display: inline-block;
+}
+
+#fileInput {
+    display: none;
+}
+
+#previewImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#overlay {
+    position: absolute;
+    top: calc(50% - 18px); /* 중앙 정렬을 위해 높이의 절반에서 텍스트 높이의 절반을 뺍니다. */
+    left: calc(50% - 50px);
+    width: 100px; /* 텍스트의 너비 설정 */
+    height: 36px; /* 텍스*/
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+}
+
+.userimg:hover #overlay {
+    opacity: 1;
+}
+
+
+.changeBox{
+    padding-bottom: 20px;
+}
+.changeBox label{
+    font-size : 20px;
+    padding-right: 320px;
+}
+#nickname, #email{
+    padding-right: 340px;
+}
+#ckpw{
+    padding-right: 280px;
+}
+#nickname{
+    margin-top: 1px;
+}
+.changeBox input[type=text]{
+    width: 400px;
+    height: 43px;
+    border-style: none;
+    border-radius: 10px;
+    margin-top : 3px;
+    margin-bottom: 15px;
+}
+.changeBox input[type=text]::placeholder{
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    padding:  0.5em;
+}
+.changeBox input[type=password]{
+    width: 400px;
+    height: 43px;
+    border-style: none;
+    border-radius: 10px;
+    margin-top : 3px;
+    margin-bottom: 15px;
+}
+.changeBox input[type=password]::placeholder{
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    padding:  0.5em;
+
+}
+.lastLine{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+button[type=submit]{
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+    padding: 0.5em;
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin-left: 1200px;
+    position: relative;
+
+}

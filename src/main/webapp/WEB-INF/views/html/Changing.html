@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artfinity</title>
+    <link rel="stylesheet" href="css/Changing.css">
+</head>
+<body>
+  <!-- 고정 Ui -->
+    <nav>
+        <div class="logo">Art🖍️finity</div>
+        <div class="nav-items">
+          <a href="/projects">프로젝트</a>
+          <a href="/wallpapers">배경화면</a>
+          <a href="/creators">크리에이터</a>
+        </div>
+        <div class="nav-right">
+          <input type="search" placeholder="검색">
+          <a href="/mypage"><img src="images/dog.png" alt="마이페이지"></a>
+        </div>
+      </nav>
+
+      <!-- 정보수정 -->
+      <div class="header">
+        <h2>회원정보 수정</h2>
+        <div class="line"></div>
+      </div>
+      <div class="changebody">
+
+        <form action="" method="post">
+
+          <div class="userimg">
+            <input type="file" id="fileInput" style="display: none;" onchange="changeimg(event)">
+            <label for="fileInput">
+              <img id="previewImg" src="images/dog.png" alt="">
+              <div id="overlay">변경하기</div>
+            </label>
+          </div>     
+
+          <div class="changeBox">
+            <label for="nickname" id="nickname">닉네임</label><br>
+            <input type="text" name="name" id="username" placeholder="Name">
+            <br>
+            <label for="Email" id="email">이메일</label><br>
+            <input type="text" name="email" id="userEmail" placeholder="Email">
+            <br>
+            <label for="phone">전화번호</label><br>
+            <input type="text" name="phone" id="userphone" placeholder="Phone">
+            <br>
+            <label for="password">비밀번호</label><br>
+            <input type="text" name="password" id="userPs" placeholder="Password">
+            <br>
+            <label for="checkpassword" id="ckpw">비밀번호 확인</label><br>
+            <input type="text" name="ckpassowrd" id="userpscheck" placeholder="Password확인">
+          </div>
+
+          <button type="submit">정보변경</button>
+
+        </form>
+
+      </div>
+      <div class="lastLine"></div>
+<script src="js/Changing.js"></script>
+</body>
+</html>

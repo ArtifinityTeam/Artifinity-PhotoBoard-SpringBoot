@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    min-width: 1000px; /* 1200px */
+    margin: 0;
+    font-family: 'Pretendard-Regular';
+}
+nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: white;
+}
+
+.logo a{
+    font-family: 'KCCChassam';
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+}
+.nav-items a {
+    margin: 0;
+    padding-right: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-right input[type="search"] {
+    margin-right: 50px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+}
+.nav-right img {
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+}
+
+/* ---------------------------------------------------------- */
+.board-banner {
+    /*background-color: #D8E1EA;*/
+    margin: 0px 80px 15px 80px;
+    height: 220px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*overflow: hidden; !* 자식 요소의 넘침 처리 *!*/
+}
+.board-banner img{
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    transition: opacity 0.5s ease;
+}
+.board-banner img:first-child {
+    opacity: 1;
+}
+
+.board-banner img:last-child {
+    opacity: 0;
+}
+
+.board-banner:hover img:first-child {
+    opacity: 0;
+}
+
+.board-banner:hover img:last-child {
+    opacity: 1;
+}
+.list {
+    background-color: #D8E1EA;
+    margin: 0px 80px 0px 80px;
+    height: 60px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list dl {
+    display: flex;
+    width: 100%;
+}
+
+.list .num {
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+.list .subject {
+    flex: 0 0 55%;
+    text-align: center;
+}
+
+.list .name {
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+.list .created {
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+.title {
+    height: 60px;
+    font-size: 19px;
+    margin: 0px 80px 0px 80px;
+    font-weight: bold;
+    text-align: center;
+    display: block;  /*이친구가  문제였네  flex -> block*/
+    justify-content: center;
+    align-items: center;
+}
+
+.title dl {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.N_num {
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+.N_subject {
+    flex: 0 0 55%;
+    text-align: center;
+}
+.N_subject a {
+    text-decoration: none;
+    color : black;
+}
+
+.N_name {
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+.N_created {
+    flex: 0 0 15%;
+    text-align: center;
+}
+
+
+/* 업로드 버튼 */
+.uploadNotice{
+    display : flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+.upload-button {
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+    background-color: white;
+    transition: background-color 0.3s;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background-color: #D8E1EA;
+}
