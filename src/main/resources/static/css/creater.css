@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    min-width:1280px;
+    margin: 0;
+    background-color: #D8E1EA;
+    font-family: 'Pretendard-Regular';
+}
+nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: white;
+}
+.logo a{
+    font-family: 'KCCChassam';
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+}
+.nav-items a {
+    margin: 0;
+    padding-right: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-right input[type="search"] {
+    margin-right: 50px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+}
+.nav-right img {
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+}
+
+/* 정렬 버튼 */
+.menu_bar{
+    margin-left : 5%;
+
+}
+.menu_bar button[type=button]{
+    border: none;
+    outline: none;
+    font-family: 'Pretendard-Regular';
+    font-size: 1em;
+    font-weight:normal;
+    background-color: #ffffff;
+    color :rgb(0, 0, 0);
+    margin-left : 2.3%;
+    margin-top : 50px;
+    cursor: pointer;
+    width: 134px;
+    height: 42px;
+    border-radius: 15px;
+}
+.menu_bar button[type=button]:hover{
+    background-color: #ADB4BB;
+    color:white;
+}
+
+
+
+/* 크리에이터 페이지 메인 */
+.content{
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 1280px;
+    display: flex;
+}
+
+
+.gridgroup{
+    position: relative;
+    width: 350px;
+    margin-bottom: 8.5%;
+    min-width: 200px;
+}
+
+/* 그리드 */
+.grid-container {
+    display: grid;
+    grid-template-columns : repeat(5, 1fr);
+    margin-left: 90px;
+    margin-top: 60px;
+    justify-content:center;
+    align-content: center;
+}
+
+@media(max-width: 1500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-right : 0;
+        margin-left : 80px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* 제목 */
+.mboardtitle {
+    position: absolute;
+    top: 180px;
+    right: 110px;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    border: none;
+    width: auto;
+}
+
+
+/* 그리드 내부 요소설정 */
+.increator{
+    width: 250px; /* 부모 요소의 너비 */
+    border:none;
+    overflow: hidden; /* 자식 요소의 넘침 처리 */
+    border-radius: 10%;
+    position: relative;
+}
+
+
+/* 그리드 내부 이미지 크기 */
+.increator a img {
+    width: 125px;
+    height: 125px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.creatorimg{
+    position: absolute;
+    z-index: 1;
+    top : 85px;
+    left : 85px;
+}
+
+
+/* 그리드 중앙 크리에이터 이미지 */
+.creatorimg img{
+    border : 1px solid white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+
+
+/* 오른쪽하단 좋아요/조회수 */
+.detail{
+    position: absolute;
+    top: 215px;
+    right: 104px;
+}
+.detail_content{
+    display: flex;
+    padding: 0;
+}
+.detail_content span{
+    margin-left: 5px;
+}
+.detail img{
+    width: 30px;
+    height: 30px;
+}
+.icon-view, .icon-heart, .icon-comment{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}

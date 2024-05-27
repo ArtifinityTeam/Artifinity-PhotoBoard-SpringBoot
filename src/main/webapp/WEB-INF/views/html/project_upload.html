@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artfinity</title>
+    <link rel="stylesheet" href="css/sample.css">
+    <link rel="stylesheet" href="css/project_upload.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Art🖍finity</div>
+        <div class="nav-items">
+          <a href="/projects">프로젝트</a>
+          <a href="/wallpapers">배경화면</a>
+          <a href="/creators">크리에이터</a>
+        </div>
+        <div class="nav-right">
+          <input type="search" placeholder="검색">
+          <a href="/mypage"><img src="images/dog.png" alt="마이페이지"></a>
+        </div>
+      </nav>
+
+      <div class="title-tag">
+        <div class="title-input">
+            <h3>제목</h3>
+            <input type="text" placeholder="제목">
+        </div>
+        <div class="category">
+            <h3>카테고리</h3>
+            <div class="radio-buttons">
+                <input type="radio" id="illustration" name="category" value="illustration" checked>
+                <label for="illustration">일러스트</label>
+                <input type="radio" id="photo" name="category" value="photo">
+                <label for="photo">사진</label>
+                <input type="radio" id="calligraphy" name="category" value="calligraphy">
+                <label for="calligraphy">캘리그라피</label>
+                <input type="radio" id="design" name="category" value="design">
+                <label for="design">디자인</label>
+                <input type="radio" id="painting" name="category" value="painting">
+                <label for="painting">회화</label>
+                <input type="radio" id="architecture" name="category" value="architecture">
+                <label for="architecture">건축</label>
+                <input type="radio" id="crafts" name="category" value="crafts">
+                <label for="crafts">공예/조각</label>
+                <input type="radio" id="interior" name="category" value="interior">
+                <label for="interior">인테리어</label>
+                <input type="radio" id="etc" name="category" value="etc">
+                <label for="etc">기타</label>
+            </div>
+        </div>
+      </div>
+
+      <div class="toggle-slide">
+        <h3>배경화면 공개 여부</h3>
+        <div class="toggle">
+            <input id="slide" type="checkbox">
+            <label for="slide"></label>
+        </div>
+      </div>
+
+      <div class="text-file">
+        <textarea id="textInput" style="display: none;"></textarea>
+        <div class="upload">
+            <button class="upload-text" onclick="openTextInput()()"><img src="images/Text.png">텍스트 입력하기</button>
+            <input type="file" id="fileInput" style="display: none;" onchange="handleFileSelect(event)">
+            <button class="upload-img" onclick="document.getElementById('fileInput').click();"><img src="images/File.png">파일 가져오기</button>
+        </div>
+      </div>
+
+      <div class="save-button">
+        <button class="cancle">취소</button>
+        <button class="save">저장</button>
+      </div>
+
+      <script src="js/project_upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artfinity</title>
+    <link rel="stylesheet" href="css/project_detail.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Art🖍finity</div>
+        <div class="nav-items">
+          <a href="/projects">프로젝트</a>
+          <a href="/wallpapers">배경화면</a>
+          <a href="/creators">크리에이터</a>
+        </div>
+        <div class="nav-right">
+          <input type="search" placeholder="검색">
+          <a href="/mypage"><img src="images/dog.png" alt="마이페이지"></a>
+        </div>
+    </nav>
+
+    <div class="title_label">
+        <a href="sample_login.html">< 뒤로가기</a>
+        <p>강아지 귀여워</p>
+    </div>
+
+    <div class="project-section">
+        <div class="contents-container">
+            <img class="project-img" src="images/project_img1.png" alt="Artwork">
+            <p>코멘트가 들어가는 부분입니다.</p>
+        </div>
+        <div class="contents-container">
+            <img class="project-img" src="images/project_img2.png" alt="Artwork">
+            <p>코멘트가 들어가는 부분입니다.</p>
+        </div>
+        <div class="sticky-nav">
+            <div class="sticky-nav-content">
+              <a href="/mypage" class="sticky-nav-link-mypage"><img src="images/dog.png" alt="마이페이지"></a>
+              <img class="sticky-nav-link heart" src="icons/heart_icon.png" alt="좋아요">
+              <img class="sticky-nav-link chat" src="icons/chat_icon.png" alt="댓글">
+            </div>
+        </div>
+        
+    </div>
+    
+    
+
+    <div class="detail">
+        <div class="detail_content">
+            <div class="icon-view">
+                <img src="icons/view_icon.png" alt="">
+                <span>100</span>
+            </div>
+            <div class="icon-heart">
+                <img src="icons/heart_icon.png" alt="">
+                <span>100</span>
+            </div>
+            <div class="icon-comment">
+                <img src="icons/chat_icon.png" alt="">
+                <span>100</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat">
+        <hr class="top">
+
+        <div class="chatBox">
+            <div class="userImg"><img src="icons/userImg_basic_w.png" alt=""></div>
+            <div class="userChat">
+                <div class="userName">UserName</div>
+                <div class="chatContent">댓글이 들어가는 부분입니다</div>
+            </div>
+            <div class="chatSide">
+                
+                <div class="chatEdit">
+                    <img src="icons/dot_icon.png" alt="">
+
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#edit">수정</a></li>
+                            <li><a href="#delete">삭제</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="chatDate">2024-04-16</div>
+            </div>
+            
+        </div>
+
+        <hr class="bottom">
+
+        <div class="chatBox">
+            <div class="userImg"><img src="images/dog.png" alt=""></div>
+            <div class="userChat">
+                <div class="userName">MyName</div>
+                <div class="chatContent"><input type="text" value="" placeholder="댓글을 입력해 주세요"></div>
+            </div>
+            <div class="chatBtn">
+                <input type="submit" name="register" value="등록" id="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script src="js/commentEdit_dropdown.js"></script>
+    <script src="js/nav_scroll.js"></script>
+</body>
+</html>

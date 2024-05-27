@@ -1,0 +1,403 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    min-width: 1000px;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Pretendard-Regular';
+}
+nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: white;
+}
+.logo a{
+    font-family: 'KCCChassam';
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+}
+.nav-items a {
+    margin: 0;
+    padding-right: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    z-index: 1500;
+}
+.nav-right input[type="search"] {
+    margin-right: 50px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+}
+.nav-right img {
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+}
+.title_label{
+    width: 100%;
+    height: 120px;
+    background-color: #D8E1EA;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0px;
+}
+.title_label a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    color: #5F6367;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.title_label .tagName{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 30%);
+    background-color: #D8E1EA;
+    border-radius: 45px;
+    border: 1px solid white;
+    padding: 7px;
+}
+.title_label p{
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -180%);
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.contents-container img {
+    max-width: 100%;
+}
+
+.contents-container p {
+    font-size: 18px;
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 250px; /* 조정 가능 */
+    right: 50px; /* 오른쪽 끝에 붙임 */
+    width: 80px;
+    margin-left: auto; /* 왼쪽으로 자동 마진을 주어 오른쪽 정렬 */
+    margin-bottom: auto;
+    z-index: 20;
+}
+
+
+.nav-right img {
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+}
+
+
+
+.sticky-nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 270px;
+    background-color: #D8E1EA;
+    border-radius: 36px;
+
+}
+
+.sticky-nav-content img{
+    width: 40px;
+    height: 40px;
+}
+
+.sticky-nav-link-mypage img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 25px 9px 0 9px;
+}
+.sticky-nav-content .heart{
+    margin: 40px 20px;
+}
+.sticky-nav-content .chat{
+    margin: 0 20px 25px 20px;
+}
+.sticky-nav-link .sticky-nav-link-mypage{
+    background: none;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contents-container {
+    margin: 0 auto 10px auto;
+    min-width: 65%;
+    max-width: 65%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contents-container img{
+    margin: 0 auto 30px auto;
+}
+.contents-container p{
+    padding: 10px 20px;
+}
+
+/* 이미지 다운로드 버튼 ------------------------ */
+.downButton {
+    border-radius: 10px;
+    width: 200px;
+    height: 65px;
+    border: 2px solid #D8E1EA;
+    background-color: white;
+    transition: background-color 0.3s;
+    /*margin-left: 80%;*/
+    margin: 0 auto 30px auto;
+}
+
+.downButton a {
+    text-decoration-line: none;
+    color: black;
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+}
+
+.downButton:hover {
+    background-color: #D8E1EA;
+}
+
+
+.detail{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.detail_content{
+    display: flex;
+    padding: 0;
+}
+.detail_content span{
+    margin-left: 10px;
+}
+.detail img{
+    width: 30px;
+    height: 30px;
+}
+.icon-view, .icon-heart, .icon-comment{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    color: #82878C;
+}
+.chat{
+    width: 80%;
+    margin: 0 auto;
+}
+hr{
+    margin: 20px 0;
+}
+.target-anchor {
+    padding-top: 120px; /* 네비게이션 바의 높이에 맞게 조정 */
+    margin-top: -120px; /* padding-top과 동일한 값으로 음수로 설정 */
+}
+.chat hr .top{
+    margin-top: 50px;
+}
+.chatBox{
+    display: flex;
+    margin-bottom: 10px;
+}
+.userImg img{
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+}
+.userChat{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 100%;
+}
+.userName {
+    margin: auto 0;
+    font-weight: bold;
+}
+.chatContent{
+    margin: auto 0;
+}
+.chatContent input{
+    height: 30px;
+    width: 100%;
+    padding: 0.5em;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+.chatContent input:focus{
+    outline: none;
+}
+.chatSide{
+    display: flex;
+    flex-direction: column;
+}
+.chatEdit{
+    margin: auto 0 auto auto;
+    position: relative; /* 드롭다운 위치를 위한 상대적 위치 */
+    padding: 10px;
+}
+
+.chatEdit img{
+    margin: auto 0 auto auto;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    transform: translateY(-10%);
+    right: 0;
+    width: 100px;
+    height: 123px;
+    border-radius: 23px;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* 드롭다운 메뉴 아이템 스타일 */
+.dropdown-menu li {
+    padding: 20px 16px; /* 패딩 */
+    text-decoration: none; /* 텍스트 밑줄 제거 */
+    display: block; /* 블록 레벨 요소로 만들어 전체 영역 클릭 가능하게 함 */
+
+}
+.dropdown-menu li a, .dropdown-menu li button{
+    text-decoration: none;
+    color: black;
+    font-size: 16px; /* 폰트 사이즈 조정 */
+    font-family: 'Pretendard-Regular';
+    background: none; /* 배경색 없음 */
+    border: none; /* 테두리 없음 */
+    padding: 0;
+    cursor: pointer;
+    display: block; /* 링크와 동일하게 블록으로 설정 */
+    outline: none; /* 포커스 아웃라인 제거 */
+}
+.no-button-style {
+    border: none;
+    background: transparent; /* 완전 투명 */
+    cursor: pointer;
+}
+
+/* 수정 모드 시 chatSide 스타일 */
+.chatSide.editing {
+    flex-direction: row; /* 가로 방향으로 변경 */
+    justify-content: flex-end; /* 가로 정렬 */
+    margin: auto 0 auto auto;
+}
+
+/* chatSide 내부의 버튼 스타일링 */
+.chatSide .save-edit, .chatSide .cancel-edit {
+    background-color: #D8E1EA;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.chatSide .save-edit:hover, .chatSide .cancel-edit:hover {
+    background-color: #e0e0e0;
+}
+
+/* 수정 모드 시 입력 필드 스타일 */
+.userChat .edit-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 30px); /* '저장'과 '취소' 버튼의 너비를 고려하여 조절 */
+}
+
+
+
+/* 클릭하거나 호버 시 드롭다운 메뉴를 보여주는 스크립트가 필요할 수 있음 */
+.chatEdit:hover .dropdown-menu {
+    display: block; /* 호버 시 드롭다운 메뉴 보이게 함 */
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.chatDate{
+    margin: auto 0 auto auto;
+    white-space: nowrap;
+}
+.chatBtn{
+    margin: auto 0 auto 60px;
+}
+.chatBtn input[type="submit"]{
+    background-color: #D8E1EA;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.footer{
+    height: 100px;
+}
