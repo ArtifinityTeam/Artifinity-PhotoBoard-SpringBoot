@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artfinity</title>
+    <link rel="stylesheet" href="css/mypage.css">
+    
+</head>
+<body>
+    <!-- 기본ui -->
+    <nav>
+        <div class="logo">Art🖍️finity</div>
+        <div class="nav-items">
+          <a href="/projects">프로젝트</a>
+          <a href="/wallpapers">배경화면</a>
+          <a href="/creators">크리에이터</a>
+        </div>
+        <div class="nav-right">
+          <input type="search" placeholder="검색">
+          <a href="/mypage"><img src="images/dog.png" alt="마이페이지"></a>
+        </div>
+      </nav>
+
+      <!-- 유저상태바 -->
+      <div class="usercontainer">
+        <section1 class="User">
+          
+          <div class="userimage">
+            <img src="images/dog.png" alt="">
+          </div>
+          <div class="username">
+            <h2 >
+              UserName
+            </h2>
+            <button type="button" onclick="location.href='Changing.html'" value="a" id="Rename">기본정보 수정</button>   
+          </div>
+        </section1>
+        
+        <section2 class="like">
+          <h2>0<br>
+            좋아요</h2>
+            <div class="line"></div>
+          <h2>0<br>
+            조회수</h2>
+        </section>
+      </div>      
+      
+      <!-- tap -->
+      <section3 class="usertap">
+        <div class="menu_bar">
+          <button type="button" id="default" class="tab" onclick="Menu('tab1', this)">업로드한 프로젝트</button>
+          <button type="button" class="tab" onclick="Menu('tab2', this)">무드보드</button>
+        </div>
+      </section>
+
+      <!-- 업로드프로젝트 -->
+      <section4>
+        <div id="tab1" class="content" >
+          <div id="grid-container">
+
+            <!-- 그룹시작 -->
+
+            <div class="content-group">
+              <div class="content-nav" >
+                <img src="images/icon2.png" alt="">
+              </div>
+              
+              <div class="incontent">
+                <a href="#">
+                <img src="images/dog.png" alt="">
+                </a>
+              </div>
+
+              <div id="menu1" class="menu1">
+                <ul>
+                  <li><a href="#">무드보드추가</a></li>
+                  <li><a href="#" onclick="deletecontent()">삭제</a></li>
+                  <li><a href="#" onclick="editcontent()">수정</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content-group">
+              <div class="content-nav" >
+                <img src="images/icon2.png" alt="">
+              </div>
+              
+              <div class="incontent">
+                <a href="#">
+                <img src="images/dog.png" alt="">
+                </a>
+              </div>
+
+              <div id="menu1" class="menu1">
+                <ul>
+                  <li><a href="#">무드보드추가</a></li>
+                  <li><a href="#" onclick="deletecontent()">삭제</a></li>
+                  <li><a href="#" onclick="editcontent()">수정</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="content-group">
+              <div class="content-nav" >
+                <img src="images/icon2.png" alt="">
+              </div>
+              
+              <div class="incontent">
+                <a href="#">
+                <img src="images/dog.png" alt="">
+                </a>
+              </div>
+
+              <div id="menu1" class="menu1">
+                <ul>
+                  <li><a href="#">무드보드추가</a></li>
+                  <li><a href="#" onclick="deletecontent()">삭제</a></li>
+                  <li><a href="#" onclick="editcontent()">수정</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content-group">
+              <div class="content-nav" >
+                <img src="images/icon2.png" alt="">
+              </div>
+              
+              <div class="incontent">
+                <a href="#">
+                <img src="images/dog.png" alt="">
+                </a>
+              </div>
+
+              <div id="menu1" class="menu1">
+                <ul>
+                  <li><a href="#">무드보드추가</a></li>
+                  <li><a href="#" onclick="deletecontent()">삭제</a></li>
+                  <li><a href="#" onclick="editcontent()">수정</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="content-group">
+              <div class="content-nav" >
+                <img src="images/icon2.png" alt="">
+              </div>
+              
+              <div class="incontent">
+                <a href="#">
+                <img src="images/dog.png" alt="">
+                </a>
+              </div>
+
+              <div id="menu1" class="menu1">
+                <ul>
+                  <li><a href="#">무드보드추가</a></li>
+                  <li><a href="#" onclick="deletecontent()">삭제</a></li>
+                  <li><a href="#" onclick="editcontent()">수정</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+
+            
+            <!-- 추가 -->
+
+          </div>
+        </div>
+      </section4>
+
+      <!-- 무드보드 -->
+      <section>
+        <div id="tab2" class="content" style="display: none;" >
+          <div class="grid-container2">
+            <!-- 그룹시작 -->
+            <div class="gridgroup">
+
+              <div  class="grid-nav">
+                <img src="images/icon2.png" alt="">
+              </div>
+
+              <div class="mboardtitle" >
+                <p>무드보드제목</p>
+              </div>
+
+              <div id="inboard" onclick="inboard()">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+              </div>
+
+              <div id="menu" class="menu">
+                <ul>
+                  <li><a href="#" onclick="deleteboard()">삭제</a></li>
+                  <li><a href="#" onclick="editboard()">수정</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="gridgroup">
+
+              <div  class="grid-nav">
+                <img src="images/icon2.png" alt="">
+              </div>
+
+              <div class="mboardtitle" >
+                <p>무드보드제목</p>
+              </div>
+
+              <div id="inboard" onclick="inboard()">
+                <img src="images/dog.png" alt="">
+                <img src="images/picture1.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+              </div>
+
+              <div id="menu" class="menu">
+                <ul>
+                  <li><a href="#" onclick="deleteboard()">삭제</a></li>
+                  <li><a href="#" onclick="editboard()">수정</a></li>
+                </ul>
+              </div>
+
+            </div>
+            
+            <div class="gridgroup">
+
+              <div id="grid-nav" class="grid-nav">
+                <img src="images/icon2.png" alt="">
+              </div>
+
+              <div class="mboardtitle" >
+                <p>무드보드제목</p>
+              </div>
+
+              <div id="inboard" onclick="inboard()">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+              </div>
+
+              <div id="menu" class="menu">
+                <ul>
+                  <li><a href="#" onclick="deleteboard()">삭제</a></li>
+                  <li><a href="#" onclick="editboard()">수정</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="gridgroup">
+
+              <div id="grid-nav" class="grid-nav">
+                <img src="images/icon2.png" alt="">
+              </div>
+
+              <div class="mboardtitle" >
+                <p>무드보드제목</p>
+              </div>
+
+              <div id="inboard" onclick="inboard()">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+              </div>
+
+              <div id="menu" class="menu">
+                <ul>
+                  <li><a href="#" onclick="deleteboard()">삭제</a></li>
+                  <li><a href="#" onclick="editboard()">수정</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="gridgroup">
+
+              <div id="grid-nav" class="grid-nav">
+                <img src="images/icon2.png" alt="">
+              </div>
+
+              <div class="mboardtitle" >
+                <p>무드보드제목</p>
+              </div>
+
+              <div id="inboard" onclick="inboard()">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+                <img src="images/dog.png" alt="">
+              </div>
+
+              <div id="menu" class="menu">
+                <ul>
+                  <li><a href="#" onclick="deleteboard()">삭제</a></li>
+                  <li><a href="#" onclick="editboard()">수정</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+            
+
+            <!-- 추가 -->
+            
+        </div>
+      </section>
+</body>
+<script src="js/mypage.js"></script>
+</html>

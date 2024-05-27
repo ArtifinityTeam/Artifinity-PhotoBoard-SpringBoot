@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'ChosunGs';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-around; /* 요소들 사이에 공간을 균등하게 분배 */
+    height: 100vh; /* 브라우저 뷰포트의 높이에 맞춤 */
+}
+
+.left-side, .right-side {
+    flex: 1; /* 두 요소가 공간의 절반을 차지하도록 설정 */
+
+}
+
+.left-side {
+    height: 100vh; /* 브라우저 뷰포트의 높이에 맞춤 */
+    background-color: #FFF4DE; /* 왼쪽 섹션의 배경색 설정 */
+}
+
+.left-side img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.title3{
+    font-family: 'ChosunGs';
+    font-size: 50px;
+    margin-top: 40px;
+    text-align: center; /* 중앙 정렬 */
+}
+hr{
+    color: #6DAFAD;
+    text-align: center; /* 중앙 정렬 */
+}
+.right-side p{
+    text-align: center; /* 중앙 정렬 */
+}
+
+
+
+.right-side {
+    background-color: #FFDFC2; /* 배경색 설정 */
+    height: 100vh; /* 브라우저 뷰포트의 높이에 맞춤 */
+    color: black; /* 텍스트 색상 설정 */
+    font-family: 'LeferiPoint-SpecialItalicA', sans-serif; /* 글꼴 설정 */
+}
+
+.title3 {
+    font-size: 40px; /* 제목 글꼴 크기 */
+    text-align: center; /* 중앙 정렬 */
+    margin-top: 50px; /* 상단 여백 */
+}
+
+.subtitle {
+    font-family: 'Pretendard-Regular';
+    font-size: 15px; /* 부제목 글꼴 크기 */
+    text-align: center; /* 중앙 정렬 */
+    font-style: italic; /* 이탤릭체 */
+    margin-bottom: 20px; /* 하단 여백 */
+}
+
+.content {
+    font-family: 'Pretendard-Regular';
+    margin: 30px auto 30px 50px;
+}
+
+.content-item {
+    padding: 10px; /* 패딩 설정 */
+    align-items: center; /* 내용을 세로 중앙 정렬 */
+    display: flex;
+}
+
+.content-title {
+    font-weight: bold; /* 제목 굵기 */
+    padding: 10px; /* 내용에 패딩 추가 */
+    margin-top: 10px;
+}
+
+.vertical-line {
+    width: 1px; /* 선의 굵기 */
+    height: 30px; /* 선의 높이 */
+    background-color: #6DAFAD; /* 선의 색상 */
+    margin: 0 20px; /* 선 양쪽의 여백 */
+}
+
+.content-desc {
+    margin-top: 5px; /* 설명과 제목 사이의 여백 */
+    margin-left: 10px;
+    padding: 10px; /* 내용에 패딩 추가 */
+}
+
+.right-side button {
+    font-family: 'Pretendard-Regular';
+    padding: 10px 70px;
+    border: none;
+    border-radius: 200px;
+    color: #6DAFAD;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    margin: 30px auto 0 50px;
+}
+.right-side button a{
+    text-decoration: none;
+    color: #6DAFAD;
+}
+
+hr {
+    height: 2px; /* 굵기 설정 */
+    background-color: #6DAFAD; /* 배경색으로 색상 설정 */
+    border: none; /* 기본 테두리 제거 */
+    margin: 10px 60px; /* 상하 여백 설정 */
+}
+
+.footer2{
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    color: #6DAFAD;
+    left: 0; /* 왼쪽에서 시작 */
+    right: 0; /* 오른쪽까지 확장 */
+    text-align: center;
+}
+
+

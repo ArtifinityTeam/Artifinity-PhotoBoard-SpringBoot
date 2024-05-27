@@ -1,0 +1,55 @@
+.section3{
+    background-color: #D1EFDE;
+
+}
+.container3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.hash img{
+    margin-top: 30px;
+    width: 60%; /* 이미지의 너비를 컨테이너의 50%로 설정 */
+    height: auto; /* 높이는 자동으로 비율에 맞춤 */
+}
+.star img{
+    margin-top: 40px;
+    width: 60%; /* 이미지의 너비를 컨테이너의 50%로 설정 */
+    height: auto; /* 높이는 자동으로 비율에 맞춤 */
+}
+.image-container {
+    width: 100%; /* 전체 너비 사용 */
+    height: auto; /* 높이 설정 */
+    overflow: hidden; /* 넘치는 부분은 숨김 */
+}
+
+.detail{
+    font-family: 'Pretendard-Regular';
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto auto auto;
+}
+.box1, .box2, .box3{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+.detail-title{
+    padding: 5px;
+    width: 95px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #6DAFAD;
+    margin-bottom: 20px;
+}
+.footer3{
+    margin: auto auto 10px auto;
+    color: #6DAFAD;
+    font-size: 20px;
+}
