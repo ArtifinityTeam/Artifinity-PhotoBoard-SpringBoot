@@ -84,8 +84,10 @@ public class ProjectUploadController {
 
         try {
             // 파일 로컬 저장 경로 설정
+
             String uploadPath = "D:/kDigital_workspace/workspace/TEST/IntelliJ_Merge_Folder/final/Teamproject/src/main/webapp/upload";
             //String uploadPath = "C:\\Projects\\Artifinity-PhotoBoard-SpringBoot\\src\\main\\webapp\\upload";
+
 
             // 프로젝트 파일명 변경
             int randomID = (int) (Math.random() * 10000);
