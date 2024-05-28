@@ -10,13 +10,15 @@ import java.util.function.DoubleToIntFunction;
 @RestController
 public class DBService {
 
-    public static String url = "jdbc:mysql://localhost:3306/javadb1";
-    public static String user = "root";
-    public static String password = "root";
 
-//    public static String url = "jdbc:mysql://192.168.0.197:3306/javadb1";
-//    public static String user = "team1";
-//    public static String password = "123456";
+//    public static String url = "jdbc:mysql://localhost:3306/javadb1";
+//    public static String user = "root";
+//    public static String password = "root";
+
+    public static String url = "jdbc:mysql://192.168.0.197:3306/javadb1";
+    public static String user = "team1";
+    public static String password = "123456";
+
 
     //제어 객체생성
     static Connection conn = null;

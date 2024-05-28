@@ -218,8 +218,10 @@ public class UserController {
         try {
             //1. 파일 로컬저장소 경로 설정(변경사항이 바로 업데이트시키기 위해 webapp쪽에 파일생성)
             // 해당 경로도 동일하게 각자 개인 프로젝트 저장되어있는 로컬경로로 변경해야함.
-            //String uploadPath = "D:/kDigital_workspace/workspace/TEST/IntelliJ_Merge_Folder/final/Teamproject/src/main/webapp/upload";
-            String uploadPath = "C:\\Project_1\\Project_1 merge\\project_1_H\\real_final\\Teamproject\\src\\main\\webapp\\upload";
+
+            String uploadPath = "D:/kDigital_workspace/workspace/TEST/IntelliJ_Merge_Folder/final/Teamproject/src/main/webapp/upload";
+            //String uploadPath = "C:\\Projects\\Artifinity-PhotoBoard-SpringBoot\\src\\main\\webapp\\upload";
+
 
             //2. 파일명  변경
             int randomID = (int) (Math.random() * 10000);
