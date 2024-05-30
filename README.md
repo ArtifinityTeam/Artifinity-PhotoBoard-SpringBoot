@@ -33,7 +33,7 @@
 
 |김기석|김서현|나현주|이유진|
 |:---:|:---:|:---:|:---:|
-|<img src="https://github.com/ArtifinityTeam/Artifinity-PhotoBoard-SpringBoot/assets/149933307/a0100975-a124-4757-bb15-a6a65ac7acde"  width="300" height="280">|<img src="https://github.com/ArtifinityTeam/Artifinity-PhotoBoard-SpringBoot/assets/127668637/cf00dc2e-3953-4536-b1e8-c2e8dd216df9"  width="300" height="280">|<img src="https://github.com/ArtifinityTeam/Artifinity-PhotoBoard-SpringBoot/assets/149933307/2c409a25-2858-456b-8d37-cc3635d27efe"  width="300" height="280">|<img src="https://github.com/ArtifinityTeam/Artifinity-PhotoBoard-SpringBoot/assets/149933307/623f65bc-f7e2-472b-bfa7-3e1060243372"  width="300" height="280">|
+|<img src="https://github.com/ArtifinityTeam/Artifinity-PhotoBoard-SpringBoot/assets/149933307/a0100975-a124-4757-bb15-a6a65ac7acde"  width="300" height="280">|<img src="https://github.com/ArtifinityTeam/Artifinity-PhotoBoard-SpringBoot/assets/127668637/08611bb2-6c65-48cd-aede-a20a01b0ca11"  width="300" height="280">|<img src="https://github.com/ArtifinityTeam/Artifinity-PhotoBoard-SpringBoot/assets/149933307/2c409a25-2858-456b-8d37-cc3635d27efe"  width="300" height="280">|<img src="https://github.com/ArtifinityTeam/Artifinity-PhotoBoard-SpringBoot/assets/149933307/623f65bc-f7e2-472b-bfa7-3e1060243372"  width="300" height="280">|
 |[@chundae](https://github.com/chundae)|[@kshhyun](https://github.com/kshhyun)|[@HyeonJooooo](https://github.com/HyeonJooooo)|[@hbyjna](https://github.com/hbyjna)|
 <br/>
 
